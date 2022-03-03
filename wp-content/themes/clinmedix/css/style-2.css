@@ -1,0 +1,2730 @@
+:root {
+    --theme-color: #886bdf;
+    --theme-color-two: #4ad7e0;
+}
+
+.auto-container {
+    position: static;
+    max-width: 1210px;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.small-container {
+    position: relative;
+    max-width: 1050px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+.page-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 300px;
+    z-index: 9;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #646464;
+}
+
+p {
+    margin: 0;
+}
+
+p+p {
+    margin-top: 20px;
+}
+
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px !important;
+}
+
+/* Btn Style One */
+
+.btn-style-one {
+    position: relative;
+    line-height: 24px;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 38px;
+    display: inline-block;
+    background: var(--theme-color-two);
+    text-transform: capitalize;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.btn-style-one:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .5;
+    background-color: var(--theme-color-three);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.btn-style-one:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #112554;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.btn-style-one span {
+    position: relative;
+    z-index: 10;
+}
+
+.btn-style-one:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn-style-one:hover:after {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn-style-one:hover {
+    color: #fff;
+}
+
+/* Btn Style Two */
+
+.btn-style-two {
+    position: relative;
+    line-height: 24px;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 18px 38px;
+    display: inline-block;
+    background: var(--theme-color);
+    text-transform: capitalize;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.btn-style-two:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: .5;
+    background-color: var(--theme-color);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.btn-style-two:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #112554;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+}
+
+.btn-style-two span {
+    position: relative;
+    z-index: 10;
+}
+
+.btn-style-two:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn-style-two:hover:after {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.btn-style-two:hover {
+    color: #fff;
+}
+
+@-webkit-keyframes rotateme {
+    0% {
+        -webkit-transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes rotateme {
+    0% {
+        -moz-transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes rotateme {
+    0% {
+        -o-transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        -o-transform: rotate(180deg);
+        opacity: 0.7;
+    }
+    100% {
+        -o-transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes rotateme {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+.wpex_02_about-section-two .image .icon-box:before,
+.wpex_02_about-section .image-one .icon-box:before,
+.rotate-me {
+    animation-name: rotateme;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotateme;
+    -webkit-animation-duration: 15s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotateme;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: rotateme;
+    -ms-animation-duration: 15s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    -o-animation-name: rotateme;
+    -o-animation-duration: 15s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+}
+
+/*** 
+
+====================================================================
+	Header Section
+====================================================================
+
+***/
+
+.top-bar-style-one {
+    position: relative;
+    background: #edf0f2;
+}
+
+.top-bar-style-one .wrapper-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.top-bar-style-one .text {
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+    line-height: 28px;
+    margin: 5px 0 10px;
+    margin-right: 15px;
+}
+
+.top-bar-style-one .appointment-btn {
+    display: inline-block;
+    vertical-align: middle;
+    background: #886BDF;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Oxygen-Bold";
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    padding: 18px 34px 21px;
+}
+
+.top-bar-style-one .appointment-btn i {
+    margin-right: 8px;
+}
+
+/* Header Upper */
+
+.header-upper {
+    position: relative;
+    padding: 19px 0;
+}
+
+.header-upper .wrapper-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-upper .logo {
+    margin: 15px 0;
+}
+
+.header-upper .right-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.header-upper .contact-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0px;
+    padding: 10px 0;
+    border-right: 1px dashed #ccc;
+    margin-right: 30px;
+}
+
+.header-upper .contact-info li {
+    margin-right: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #848484;
+}
+
+.header-upper .contact-info li a {
+    color: #848484;
+}
+
+.header-upper .contact-info li i {
+    margin-right: 10px;
+}
+
+.header-upper .social-icon {
+    position: relative;
+}
+
+.header-upper .social-icon a {
+    position: relative;
+    margin-left: 12px;
+    font-size: 16px;
+    color: #848484;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background: #f2f5f7;
+    text-align: center;
+    transition: .4s ease;
+}
+
+.header-upper .social-icon a:hover {
+    background: var(--theme-color);
+    color: #fff;
+}
+
+/* Header Style*/
+
+.header.style-two {
+    position: relative;
+    z-index: 9999;
+}
+
+.header.style-two .thm-container {
+    position: relative;
+    max-width: 1200px;
+}
+
+.header.style-two .header-navigation {
+    background: #112554;
+}
+
+.header.style-two .header-navigation .thm-container .right-side-box a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 20px;
+    right: 0;
+    position: relative;
+    top: -2px;
+}
+
+.header.style-two .header-navigation ul.navigation-box>li {
+    padding: 19px 0 22px;
+}
+
+/* Main Slider Two */
+
+.main-slider-style-two .thm-container {
+    max-width: 1200px;
+}
+
+.main-slider-style-two .content h3 {
+    color: #4ad7e0;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.main-slider-style-two .content h1 {
+    font-size: 70px;
+    font-weight: 700;
+    color: #fff;
+    animation-delay: 1s;
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+.main-slider-style-two .content .link-btn {
+    margin-bottom: 100px;
+    animation-delay: 1.5s;
+}
+
+.main-slider-style-two .content .link-btn a {
+    margin-right: 20px;
+}
+
+#minimal-bootstrap-carousel.main-slider-style-two .carousel-control {
+    background: #fff;
+    opacity: 1;
+    color: #222;
+    border-radius: 50%;
+}
+
+/*** 
+
+====================================================================
+	Feature Section
+====================================================================
+
+***/
+
+.wpex_02_feature-section {
+    position: relative;
+}
+
+.wpex_02_feature-section .wrapper-box {
+    position: relative;
+    margin-top: -97px;
+    z-index: 999;
+}
+
+.wpex_02_feature-section .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.wpex_02_feature-section .feature-block {
+    padding: 0px;
+}
+
+.wpex_02_feature-section .inner-box {
+    position: relative;
+    padding: 50px;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    background: #fff;
+    transition: .5s ease;
+}
+
+.wpex_02_feature-section .inner-box:hover {
+    transform: translateY(10px);
+}
+
+.wpex_02_feature-section .icon-box {
+    position: relative;
+    font-size: 65px;
+    line-height: 65px;
+    color: var(--theme-color);
+    margin-bottom: 40px;
+}
+
+.wpex_02_feature-section .inner-box .feature-icon {
+    position: absolute;
+    bottom: 0px;
+    font-size: 135px;
+    right: 15px;
+    opacity: .03;
+    color: #000;
+    transition: all 700ms ease;
+}
+
+.wpex_02_feature-section .inner-box:hover .feature-icon {
+    font-size: 145px;
+    transition: all 700ms ease;
+}
+
+.wpex_02_feature-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #222;
+    margin-top: 0;
+}
+
+.wpex_02_feature-section .text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.read-more-btn {
+    position: relative;
+    font-size: 15px;
+    font-weight: 700;
+    color: #ab1c6e;
+    padding-left: 0;
+    transition: .5s ease;
+}
+
+.read-more-btn:before {
+    position: absolute;
+    content: '';
+    background: var(--theme-color);
+    height: 2px;
+    width: 20px;
+    left: 0;
+    top: 10px;
+    transform: scaleX(0);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.read-more-btn:hover:before {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+.read-more-btn:hover {
+    color: var(--theme-color);
+    padding-left: 35px;
+}
+
+/* Section Title */
+
+.sec-title {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.sec-title h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ab1c6e;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.sec-title h1 {
+    position: relative;
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    line-height: 50px;
+}
+
+.sec-title.light h1 {
+    color: #fff;
+}
+
+.sec-title h1 span {
+    color: var(--theme-color);
+}
+
+/*** 
+
+====================================================================
+	About Section
+====================================================================
+
+***/
+
+.wpex_02_about-section {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.wpex_02_about-section .image-wrapper {
+    position: relative;
+    padding-right: 50px;
+}
+
+.wpex_02_about-section .image-one {
+    position: relative;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    display: inline-block;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.wpex_02_about-section .image-one:before {
+    position: absolute;
+    content: '';
+    background: #004ca9;
+    opacity: .8;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+.wpex_02_about-section .image-one .icon-box {
+    position: absolute;
+    right: -40px;
+    top: 95px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: var(--theme-color-two);
+    border-radius: 50%;
+    font-size: 36px;
+    color: #fff;
+}
+
+.wpex_02_about-section .image-one .icon-box:before {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 140px;
+    background: url(../images/border-shape.png) no-repeat center;
+    left: -30px;
+    top: -30px;
+}
+
+.wpex_02_about-section .image-one .icon-box:after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #112554;
+    left: 0px;
+    top: 0px;
+    transform: scale(.6);
+    transition: .5s ease;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.wpex_02_about-section .image-one .icon-box:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wpex_02_about-section .image-one .icon-box span {
+    position: relative;
+    z-index: 1;
+}
+
+.wpex_02_about-section .image-two {
+    position: relative;
+    margin-top: -230px;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.wpex_02_about-section .image-two img {
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.wpex_02_about-section .content {
+    margin-left: 40px;
+}
+
+.wpex_02_about-section .text {
+    margin-bottom: 45px;
+}
+
+.wpex_02_about-section .text p+p {
+    margin-top: 30px;
+}
+
+.wpex_02_about-section .content-two {}
+
+.wpex_02_about-section .content-two .item {
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 20px;
+}
+
+.wpex_02_about-section .content-two .item .icon-holder {
+    background-color: rgba(136, 107, 223, 0.25);
+    color: #886bdf;
+    font-size: 26px;
+    padding: 22px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 1;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.wpex_02_about-section .content-two .item:nth-child(2) .icon-holder {
+    background-color: rgba(18, 157, 232, 0.25);
+    color: #129DE8;
+}
+
+.wpex_02_about-section .content-two .item .icon-holder span {
+    width: 1em;
+    height: 1em;
+    position: relative;
+    display: block;
+    transform: rotate(0deg);
+}
+
+.wpex_02_about-section .content-two .item .icon-holder span:before {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.wpex_02_about-section .content-two .item .title h3 {
+    position: relative;
+    color: #3d415b;
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.wpex_02_about-section .content-two .item .text {}
+
+/*** 
+
+====================================================================
+	Services Section
+====================================================================
+
+***/
+
+.wpex_02_services-section {
+    position: relative;
+    padding: 120px 0 90px;
+    background: #f2f5f7;
+}
+
+.wpex_02_services-section .tab-btn-style-one {
+    position: relative;
+    margin: 0 -15px 70px;
+    border-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.wpex_02_services-section .tab-btn-style-one li {
+    position: relative;
+    margin: 0 12px 30px;
+    float: none;
+}
+
+.wpex_02_services-section .tab-btn-style-one li a {
+    background: #fff;
+    padding: 20px 39px;
+    transition: .5s ease;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.wpex_02_services-section .tab-btn-style-one li.active a {
+    background: var(--theme-color);
+}
+
+.wpex_02_services-section .tab-btn-style-one li a span {
+    font-size: 50px;
+    color: var(--theme-color);
+    transition: .5s ease;
+    line-height: 50px;
+}
+
+.wpex_02_services-section .tab-btn-style-one li.active a span {
+    color: #fff;
+}
+
+.wpex_02_services-section .tab-btn-style-one li a h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #222;
+    transition: .5s ease;
+}
+
+.wpex_02_services-section .tab-btn-style-one li.active a h4 {
+    color: #fff;
+}
+
+.wpex_02_services-section .tab-content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.wpex_02_services-section .tab-content h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: #222;
+}
+
+.wpex_02_services-section .tab-content .text {
+    margin-bottom: 35px;
+}
+
+.wpex_02_services-section .tab-content .image {
+    position: relative;
+    margin-bottom: 30px;
+    text-align: right;
+}
+
+.wpex_02_services-section .tab-content .image:before {
+    position: absolute;
+    content: '';
+    height: 202px;
+    width: 154px;
+    left: -38px;
+    bottom: -50px;
+    background: url(../images/shape-1.jpg) no-repeat;
+}
+
+.wpex_02_services-section .tab-content .image img {
+    position: relative;
+    border-radius: 5px;
+}
+
+.wpex_02_services-section .service-inner-tab-content h4 {
+    color: #333333;
+    font-size: 18px;
+    font-family: "Oxygen-Bold";
+    margin-bottom: 30px;
+}
+
+.wpex_02_services-section .service-inner-tab-content ul.list-items li {
+    position: relative;
+    padding-left: 25px;
+    font-family: "Oxygen-Bold";
+    font-size: 14px;
+    color: #414141;
+    list-style: none;
+}
+
+.wpex_02_services-section .service-inner-tab-content {
+    margin-top: -15px;
+}
+
+.wpex_02_services-section ul.list-items {
+    padding: 0px 0px;
+    margin-bottom: 30px;
+}
+
+.wpex_02_services-section .service-inner-tab-content ul.list-items li+li {
+    margin-top: 15px;
+}
+
+.wpex_02_services-section .service-inner-tab-content ul.list-items li i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #ab1c6e;
+}
+
+/*** 
+
+====================================================================
+	CTA Section
+====================================================================
+
+***/
+
+.wpex_02_cta-section {
+    position: relative;
+    padding: 120px 0 90px;
+    background: #112554;
+}
+
+.wpex_02_cta-section:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-6.png) no-repeat top left;
+}
+
+.wpex_02_cta-section:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-7.png) no-repeat bottom right;
+}
+
+.wpex_02_cta-section .auto-container {
+    position: relative;
+    z-index: 5;
+}
+
+.wpex_02_cta-section .content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.wpex_02_cta-section .content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--theme-color);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.wpex_02_cta-section .content h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.wpex_02_cta-section .content .btn-style-one:after,
+.wpex_02_cta-section .content .btn-style-two:after {
+    background: #fff;
+}
+
+.wpex_02_cta-section .content .btn-style-one:hover,
+.wpex_02_cta-section .content .btn-style-two:hover {
+    color: #112554;
+}
+
+.wpex_02_cta-section .content .btn-style-two {
+    margin-right: 20px;
+}
+
+.wpex_02_cta-section .fun-facts {
+    position: relative;
+    background: #fff;
+    padding: 50px;
+    max-width: 500px;
+    float: right;
+    text-align: center;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    margin-bottom: -140px;
+    bottom: -60px;
+    border-radius: 10px;
+}
+
+.wpex_02_cta-section .wrapper-box {
+    position: relative;
+    margin: -2px;
+    overflow: hidden;
+}
+
+.wpex_02_cta-section .wrapper-box .row {
+    position: relative;
+    margin: -2px;
+    overflow: hidden;
+}
+
+.wpex_02_cta-section .single-fun-fact {
+    position: relative;
+    border-bottom: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    padding: 40px 15px;
+}
+
+.wpex_02_cta-section .single-fun-fact h3 {
+    position: relative;
+    font-size: 34px;
+    font-weight: 700;
+    color: #ab1c6e;
+}
+
+.wpex_02_cta-section .single-fun-fact p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    color: #222222;
+}
+
+/*** 
+
+====================================================================
+	Testimonial Section
+====================================================================
+
+***/
+
+.wpex_02_testimonial-section {
+    position: relative;
+    padding: 120px 0 80px;
+}
+
+.wpex_02_testimonial-section.style-two {
+    padding-top: 120px;
+}
+
+.wpex_02_testimonial-section .wrapper-box {
+    position: relative;
+}
+
+.wpex_02_testimonial-section .wrapper-box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 46px;
+    width: 154px;
+    height: 202px;
+    background: url(../images/shape-4.png) no-repeat;
+}
+
+.wpex_02_testimonial-section .wrapper-box:after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 130px;
+    width: 130px;
+    height: 130px;
+    background: url(../images/shape-5.png) no-repeat;
+    z-index: -1;
+}
+
+.wpex_02_testimonial-section .bg-box {
+    position: relative;
+    padding: 0 120px;
+}
+
+.wpex_02_testimonial-section .bg-box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 70px;
+    right: 0;
+    bottom: 94px;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    background: #fff;
+    max-width: 970px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.wpex_02_testimonial-section .inner-box {
+    position: relative;
+    max-width: 970px;
+    margin: 70px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.wpex_02_testimonial-section .testimonial-block .author-thumb {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.2);
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: -95px;
+}
+
+.wpex_02_testimonial-section .testimonial-block .author-thumb:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border: 7px solid #fff;
+    border-radius: 50%;
+}
+
+.wpex_02_testimonial-section .testimonial-block .author-thumb img {
+    width: auto;
+    border-radius: 50%;
+}
+
+.wpex_02_testimonial-section .testimonial-block .text {
+    max-width: 780px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.wpex_02_testimonial-section .testimonial-block .author-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ab1c6e;
+}
+
+.wpex_02_testimonial-section .owl-nav {
+    display: none;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: #e1e3e2;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--theme-color);
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: var(--theme-color);
+    width: 35px;
+}
+
+/*** 
+
+====================================================================
+	Team Section
+====================================================================
+
+***/
+
+.wpex_02_team-section {
+    position: relative;
+    padding: 120px 0 90px;
+    background: #f2f5f7;
+}
+
+.wpex_02_team-section .team-block {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.wpex_02_team-section .share-icon {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 9;
+}
+
+.wpex_02_team-section .share-icon .share-btn {
+    font-size: 16px;
+    position: relative;
+    color: var(--theme-color-two);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.wpex_02_team-section .share-icon:hover .share-btn {
+    background: var(--theme-color-two);
+    color: #fff;
+}
+
+.wpex_02_team-section .share-icon ul {
+    position: absolute;
+    top: 100%;
+    left: 70px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s ease;
+    transition: all 900ms ease;
+}
+
+.wpex_02_team-section .share-icon ul li {
+    margin-top: 10px;
+}
+
+.wpex_02_team-section .share-icon ul a {
+    font-size: 16px;
+    position: relative;
+    color: var(--theme-color-two);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    background: #fff;
+    transition: .5s ease;
+}
+
+.wpex_02_team-section .share-icon ul a:hover {
+    color: #fff;
+    background: var(--theme-color);
+}
+
+.wpex_02_team-section .share-icon:hover ul {
+    opacity: 1;
+    visibility: visible;
+    transition: all 900ms ease;
+    left: 0;
+}
+
+.wpex_02_team-section .image {
+    position: relative;
+    /* margin-bottom: 30px; */
+    overflow: hidden;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.wpex_02_team-section .image:before {
+    position: absolute;
+    content: '';
+    background: rgba(17, 37, 84, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .7s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.wpex_02_team-section .image:hover:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.wpex_02_team-section .image img {
+    width: 100%;
+    transition: 2s ease;
+    /* border-radius: 10px 10px 0px 0px; */
+}
+
+.wpex_02_team-section .image:hover img {
+    transform: scale(1.1);
+}
+
+.wpex_02_team-section .content h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #ab1c6e;
+    margin-bottom: 15px;
+    margin-top: 0px;
+}
+
+.wpex_02_team-section .content h3 a {
+    color: #ab1c6e;
+    transition: .5s ease;
+}
+
+.wpex_02_team-section .content h3 a:hover {
+    color: var(--theme-color);
+}
+
+/*** 
+
+====================================================================
+	Pricing Section
+====================================================================
+
+***/
+
+.wpex_02_pricing-section {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.wpex_02_pricing-section .pricing-block {
+    position: relative;
+    box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 70px 20px;
+    transition: .5s ease;
+}
+
+.wpex_02_pricing-section .pricing-block:hover {
+    transform: translateY(-10px);
+}
+
+.wpex_02_pricing-section .category {
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    color: #353535;
+    margin-bottom: 15px;
+}
+
+.wpex_02_pricing-section .price {
+    position: relative;
+    font-size: 46px;
+    font-weight: 700;
+    color: #ab1c6e;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.wpex_02_pricing-section .list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+
+.wpex_02_pricing-section .list li {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 26px;
+}
+
+.wpex_02_pricing-section .list li span {
+    color: #7d7e80;
+}
+
+.wpex_02_pricing-section .link-btn {
+    position: relative;
+    z-index: 2;
+}
+
+/* Active Block */
+
+.wpex_02_pricing-section .pricing-block.active {
+    position: relative;
+    background: #004ca9;
+}
+
+.wpex_02_pricing-section .pricing-block.active:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-8.png) no-repeat top left;
+}
+
+.wpex_02_pricing-section .pricing-block.active:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-9.png) no-repeat bottom right;
+}
+
+.wpex_02_pricing-section .active .category {
+    color: #fff;
+}
+
+.wpex_02_pricing-section .active .price {
+    color: var(--theme-color-two);
+}
+
+.wpex_02_pricing-section .active .list li {
+    color: #fff;
+}
+
+.wpex_02_pricing-section .active .list li span {
+    color: rgba(255, 255, 255, 0.60);
+}
+
+/*** 
+
+====================================================================
+	Appointment Section
+====================================================================
+
+***/
+
+.wpex_02_appointment-form-section {
+    position: relative;
+    padding: 120px 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.wpex_02_appointment-form-section .default-form-area {
+    position: relative;
+    background: #fff;
+    padding: 60px 50px;
+    max-width: 570px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 30px;
+}
+
+.contact-form .dropdown-toggle {
+    background: transparent;
+    border: 0;
+}
+
+.contact-form .dropdown-toggle,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form select,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    color: #848484;
+    line-height: 30px;
+    padding: 11px 0px;
+    font-weight: 300;
+    background-color: #fff;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #eaeaea;
+    transition: all 500ms ease;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--theme-color);
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+    padding: 12px 0;
+}
+
+.contact-form button {
+    cursor: pointer;
+}
+
+.contact-form input.error,
+.contact-form select.error,
+.contact-form textarea.error {
+    border-color: #ff0000 !important;
+}
+
+.contact-form label.error {
+    display: block;
+    line-height: 24px;
+    padding: 5px 0px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #ff0000;
+    font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-color: var(--theme-color);
+}
+
+.btn-default:active:focus,
+.open>.dropdown-toggle.btn-default:focus {
+    border-color: transparent;
+    background: transparent;
+    outline: none !important;
+}
+
+.btn-group.open .dropdown-toggle {
+    box-shadow: none;
+}
+
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 100%;
+}
+
+.contact-form button {
+    border: 0;
+}
+
+/*** 
+
+====================================================================
+	Blog Section
+====================================================================
+
+***/
+
+.wpex_02_blog-section {
+    position: relative;
+    padding: 120px 0 90px;
+    background-color: #f1f7fa;
+}
+
+.wpex_02_blog-section .news-block {
+    position: relative;
+    margin-bottom: 30px;
+    transition: .7s ease;
+}
+
+.wpex_02_blog-section .news-block:hover {
+    box-shadow: 0px 1px 50px 0px rgba(209, 209, 209, .75);
+    transition: .3s ease;
+}
+
+.wpex_02_blog-section .content {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.wpex_02_blog-section ul.post-categories {
+    margin-bottom: 0;
+}
+
+.wpex_02_blog-section .post-meta {
+    margin-left: -50px !important;
+    left: 50px;
+    position: relative;
+}
+
+.wpex_02_blog-section .image {
+    position: relative;
+    margin-bottom: 0;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.wpex_02_blog-section .image:before {
+    position: absolute;
+    content: '';
+    background: rgba(17, 37, 84, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .7s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.wpex_02_blog-section .news-block:hover .image:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.wpex_02_blog-section .image img {
+    width: 100%;
+    transition: 2s;
+}
+
+.wpex_02_blog-section .image:hover img {
+    transform: scale(1.2);
+}
+
+.wpex_02_blog-section .category {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #fff;
+    padding: 9px 20px;
+    text-transform: uppercase;
+    z-index: 9;
+}
+
+.wpex_02_blog-section .category a {
+    color: #434343;
+}
+
+.wpex_02_blog-section .post-meta {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.wpex_02_blog-section .post-meta li {
+    position: relative;
+    margin-right: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3b3b3b;
+}
+
+.wpex_02_blog-section .post-meta li:before {
+    position: absolute;
+    content: '';
+    top: 5px;
+    right: -16px;
+    width: 2px;
+    height: 12px;
+    background: #8a8d91;
+}
+
+.wpex_02_blog-section .post-meta li:last-child:before {
+    display: none;
+}
+
+.wpex_02_blog-section .post-meta li a {
+    color: #ab1c6e;
+}
+
+.wpex_02_blog-section h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin: 0 0 20px;
+}
+
+.wpex_02_blog-section h3 a {
+    color: #222;
+    transition: .5s ease;
+}
+
+.wpex_02_blog-section h3 a:hover {
+    color: var(--theme-color);
+}
+
+.wpex_02_blog-section .text {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/*** 
+
+====================================================================
+	Appointment Section Two
+====================================================================
+
+***/
+
+.wpex_02_appointment-form-section-two {
+    position: relative;
+}
+
+.wpex_02_appointment-form-section-two .default-form-area {
+    position: relative;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+    padding: 60px 70px;
+    background: #fff;
+    margin-top: -100px;
+    z-index: 999;
+    border-radius: 10px;
+}
+
+.wpex_02_appointment-form-section-two .sec-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wpex_02_appointment-form-section-two .sec-title .icon {
+    position: absolute;
+    right: 24px;
+    bottom: 28px;
+    color: #f0f0f0;
+    font-size: 120px;
+    line-height: 100px;
+}
+
+.wpex_02_appointment-form-section-two .sec-title h1 {
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/*** 
+
+====================================================================
+	About Section Two
+====================================================================
+
+***/
+
+.wpex_02_about-section-two {
+    position: relative;
+    padding: 120px 0 90px;
+}
+
+.wpex_02_about-section-two .image {
+    margin-bottom: 30px;
+    margin-left: 70px;
+    position: relative;
+}
+
+.wpex_02_about-section-two .image .icon-box {
+    position: absolute;
+    left: -40px;
+    bottom: 95px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: var(--theme-color-two);
+    border-radius: 50%;
+    font-size: 36px;
+    color: #fff;
+}
+
+.wpex_02_about-section-two .image .icon-box:before {
+    position: absolute;
+    content: '';
+    width: 140px;
+    height: 140px;
+    background: url(../images/border-shape.png) no-repeat center;
+    left: -30px;
+    top: -30px;
+}
+
+.wpex_02_about-section-two .image .icon-box:after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #112554;
+    left: 0px;
+    top: 0px;
+    transform: scale(.6);
+    transition: .5s ease;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.wpex_02_about-section-two .image .icon-box:hover:after {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wpex_02_about-section-two .image .icon-box span {
+    position: relative;
+    z-index: 1;
+}
+
+.wpex_02_about-section-two .content {
+    margin-bottom: 30px;
+}
+
+.wpex_02_about-section-two .text {
+    margin-bottom: 50px;
+    margin-right: 40px;
+}
+
+/*** 
+
+====================================================================
+	Services Section Two
+====================================================================
+
+***/
+
+.wpex_02_services-section-two {
+    position: relative;
+    padding: 120px 0 5px;
+    background-size: cover;
+    margin-bottom: 250px;
+}
+
+.wpex_02_services-section-two .service-wrapper {
+    margin-bottom: -250px;
+}
+
+.wpex_02_services-section-two .inner-box {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 15px 40px 0px rgba(6, 46, 96, 0.1);
+}
+
+.wpex_02_services-section-two .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.wpex_02_services-section-two .image:before {
+    position: absolute;
+    content: '';
+    background: rgba(17, 37, 84, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .7s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.wpex_02_services-section-two .image:hover:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.wpex_02_services-section-two .image img {
+    width: 100%;
+    transition: 2s;
+}
+
+.wpex_02_services-section-two .image:hover img {
+    transform: scale(1.2);
+}
+
+.wpex_02_services-section-two .icon-box {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    background: var(--theme-color);
+    box-shadow: 0px 10px 25px 0px rgba(13, 29, 13, 0.2);
+    border-radius: 50%;
+    font-size: 36px;
+    color: #fff;
+    margin: 0 auto 30px;
+    margin-top: -40px;
+    z-index: 9;
+}
+
+.wpex_02_services-section-two .icon-box:before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: #112554;
+    left: 0px;
+    top: 0px;
+    transform: scale(.6);
+    transition: .5s ease;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.wpex_02_services-section-two .icon-box:hover:before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wpex_02_services-section-two .icon-box span {
+    position: relative;
+    z-index: 1;
+}
+
+.wpex_02_services-section-two h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.wpex_02_services-section-two h4 a {
+    color: #222;
+    transition: .5s ease;
+}
+
+.wpex_02_services-section-two h4 a:hover {
+    color: var(--theme-color);
+}
+
+.wpex_02_services-section-two .text {
+    margin-bottom: 20px;
+}
+
+/*** 
+
+====================================================================
+	Projects Section
+====================================================================
+
+***/
+
+.wpex_02_projects-section {
+    position: relative;
+    padding: 120px 0 100px;
+}
+
+.wpex_02_projects-section .wrapper-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.wpex_02_projects-section .link-btn {
+    margin-bottom: 50px;
+}
+
+.wpex_02_projects-section .filter-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-bottom: 50px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.wpex_02_projects-section .filter-tabs li {
+    padding: 0;
+    margin: 0px 10px 0px;
+}
+
+.wpex_02_projects-section .filter-tabs li:first-child {
+    margin-left: 0px;
+}
+
+.wpex_02_projects-section .filter-tabs li.active {}
+
+.wpex_02_projects-section .filter-tabs li span {
+    color: #222;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 22px;
+    display: block;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.wpex_02_projects-section .filter-tabs li:last-child span {
+    border-right: 0px;
+}
+
+.wpex_02_projects-section .filter-tabs li:hover span,
+.wpex_02_projects-section .filter-tabs li.active span {
+    color: var(--theme-color);
+    transition: .5s ease;
+}
+
+.wpex_02_projects-section .filter-tabs li span i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.wpex_02_projects-section .single-gallery-style-one {
+    margin-bottom: 30px;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block {
+    overflow: hidden;
+    transition: all .4s ease;
+    position: relative;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background: rgba(0, 76, 169, 0.9);
+    opacity: 0;
+    transition: all 0.6s ease-in-out 0.3s;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block .box .img-popup {
+    display: block;
+    font-size: 30px;
+    color: var(--theme-color-two);
+    margin-bottom: 30px;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block .box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block .box h3 a {
+    color: #fff;
+}
+
+.wpex_02_projects-section .single-gallery-style-one .image-block>img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.wpex_02_projects-section .single-gallery-style-one:hover .image-block>img {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.wpex_02_projects-section .single-gallery-style-one:hover .image-block .box {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+.wpex_02_projects-section .wpex_02_projects-section .single-gallery-style-one .image-block .box {
+    background: hsla(201, 57%, 25%, 0.80);
+}
+
+.wpex_02_projects-section .box-two {
+    position: absolute;
+    width: 100%;
+    background: #0255c2;
+    bottom: 0;
+    padding: 30px;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translateY(100%);
+}
+
+.wpex_02_projects-section .single-gallery-style-one:hover .box-two {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wpex_02_projects-section .box-two h3 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #fff;
+    font-family: var(--font-family-playfair);
+    margin-bottom: 12px;
+}
+
+.wpex_02_projects-section .box-two h3 a {
+    color: #fff;
+}
+
+.wpex_02_projects-section .box-two .text {
+    font-size: 15px;
+    color: rgba(255, 255, 254, 0.7);
+    line-height: 30px;
+}
+
+/*** 
+
+====================================================================
+	Fullwidth Section
+====================================================================
+
+***/
+
+.wpex_02_fullwidth-section {
+    position: relative;
+    background: #112554;
+}
+
+.wpex_02_fullwidth-section .auto-container {
+    max-width: 100%;
+    padding: 0;
+}
+
+.wpex_02_fullwidth-section .wrapper-box {
+    position: relative;
+}
+
+.wpex_02_fullwidth-section .image-column {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+}
+
+.wpex_02_fullwidth-section .image-column .image {
+    display: none;
+}
+
+.wpex_02_fullwidth-section .content-column {
+    position: relative;
+    width: 50%;
+    float: right;
+    padding: 120px 0 90px;
+    padding-left: 120px;
+}
+
+.wpex_02_fullwidth-section .content-column .outer-box {
+    position: relative;
+    max-width: 600px;
+}
+
+.wpex_02_fullwidth-section .content-column .text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.wpex_02_fullwidth-section .why-choose-block {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.wpex_02_fullwidth-section .why-choose-block .content {
+    max-width: 480px;
+}
+
+.wpex_02_fullwidth-section .why-choose-block .icon-box {
+    position: relative;
+    font-size: 60px;
+    color: var(--theme-color-two);
+    margin-right: 50px;
+    line-height: 60px;
+    margin-top: 10px;
+}
+
+.wpex_02_fullwidth-section .why-choose-block h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--theme-color-two);
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/*** 
+
+====================================================================
+	Team Section Two
+====================================================================
+
+***/
+
+.wpex_02_team-section-two {
+    position: relative;
+    padding: 120px 0 90px;
+    background: #f2f5f7;
+}
+
+.wpex_02_team-section-two:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/shape-3.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.wpex_02_team-section-two .team-block {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0px 15px 40px 0px rgba(6, 46, 96, 0.1);
+    margin-bottom: 30px;
+}
+
+.wpex_02_team-section-two .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.wpex_02_team-section-two .image:before {
+    position: absolute;
+    content: '';
+    background: rgba(17, 37, 84, 0.7);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    transition: .7s ease;
+    z-index: 2;
+    opacity: 0;
+}
+
+.wpex_02_team-section-two .image:hover:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.wpex_02_team-section-two .image img {
+    width: 100%;
+    transition: 2s;
+}
+
+.wpex_02_team-section-two .image:hover img {
+    transform: scale(1.2);
+}
+
+.wpex_02_team-section-two .content {
+    text-align: center;
+}
+
+.wpex_02_team-section-two h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.wpex_02_team-section-two h3 a {
+    color: #222;
+    transition: .5s ease;
+}
+
+.wpex_02_team-section-two h3 a:hover {
+    color: var(--theme-color);
+}
+
+.wpex_02_team-section-two .link a {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--theme-color);
+}
+
+.wpex_02_team-section-two .social-icon {
+    position: relative;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpex_02_team-section-two .social-icon li {
+    margin: 0 5px;
+}
+
+.wpex_02_team-section-two .social-icon a {
+    font-size: 16px;
+    position: relative;
+    color: var(--theme-color-two);
+    width: 45px;
+    height: 45px;
+    line-height: 43px;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+.wpex_02_team-section-two .social-icon a:hover {
+    color: #fff;
+    background: var(--theme-color-two);
+    border-color: var(--theme-color-two);
+}
+
+/*** 
+
+====================================================================
+	CTA Section Two
+====================================================================
+
+***/
+
+.wpex_02_cta-section-two {
+    position: relative;
+    padding: 120px 0px;
+    background: #004ca9;
+}
+
+.wpex_02_cta-section-two:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-6.png) no-repeat top left;
+}
+
+.wpex_02_cta-section-two:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/shape-7.png) no-repeat bottom right;
+}
+
+.wpex_02_cta-section-two .auto-container {
+    position: relative;
+    z-index: 5;
+}
+
+.wpex_02_cta-section-two .content {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.wpex_02_cta-section-two .content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--theme-color-two);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.wpex_02_cta-section-two .content h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.wpex_02_cta-section-two .content .btn-style-one:after,
+.wpex_02_cta-section-two .content .btn-style-two:after {
+    background: #fff;
+}
+
+.wpex_02_cta-section-two .content .btn-style-one:hover,
+.wpex_02_cta-section-two .content .btn-style-two:hover {
+    color: #112554;
+}
+
+.wpex_02_cta-section-two .content .btn-style-two {
+    margin-right: 20px;
+}
+
+/*================= Responsive Style ====================*/
+
+@media only screen and (max-width:991px) {
+    .wpex_02_cta-section .fun-facts {
+        max-width: 100%;
+        float: none;
+    }
+    .wpex_02_services-section .tab-content .link-btn {
+        margin-bottom: 40px;
+    }
+    .wpex_02_fullwidth-section .content-column,
+    .wpex_02_fullwidth-section .image-column {
+        position: relative;
+        width: 100%;
+    }
+    .wpex_02_fullwidth-section .image-column .image {
+        display: block;
+    }
+    .wpex_02_fullwidth-section .image-column .image img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    .header-upper .contact-info,
+    .header-upper .right-content,
+    .header-upper .wrapper-box,
+    .top-bar-style-one .wrapper-box {
+        justify-content: center;
+    }
+    .header-upper .contact-info {
+        margin-bottom: 20px;
+        border-right: 0;
+        margin-right: 0;
+    }
+    .main-slider-style-two .content h1 {
+        font-size: 45px;
+    }
+    .main-slider-style-two .content h3 {
+        font-size: 20px;
+    }
+    .wpex_02_testimonial-section .bg-box {
+        padding: 0 20px;
+    }
+    .wpex_02_testimonial-section .wrapper-box:after {
+        display: none;
+    }
+    .wpex_02_fullwidth-section .content-column {
+        padding-left: 15px;
+    }
+}
+
+@media only screen and (max-width:499px) {
+    .wpex_02_about-section .image-one .icon-box {
+        right: 50%;
+        margin-right: -40px;
+    }
+    .wpex_02_about-section .image-wrapper {
+        padding-right: 0;
+    }
+    .wpex_02_about-section .image-one {
+        display: block;
+    }
+    .wpex_02_about-section .content {
+        margin-left: 0;
+    }
+    .sec-title h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .top-bar-style-one .text {
+        text-align: center;
+    }
+}
+
+.about-style-four .about-style-four-content h4 {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 16px;
+}
+
+.about-style-four .about-style-four-content h4 i {
+    position: relative;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: #ab1c6e;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.service-style-four.ex .image-box {
+    position: relative;
+    margin-top: 20px;
+}
+
+.service-style-four.ex .image-box:after {
+    content: '';
+    width: 500px;
+    height: 415px;
+    background: rgba(18, 157, 232, 0.5);
+    border-radius: 5px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: -1;
+}
+
+.service-style-four.ex {
+    padding-bottom: 135px;
+}
+
+.appointment-style-one.home-two.ex .appointment-form input {
+    background: transparent;
+}
+
+.appointment-style-one.home-two .bootstrap-select .dropdown-menu>li.selected>a .text {
+    color: #fff !important;
+}
+
+.appointment-style-one.home-two .bootstrap-select .dropdown-menu>li>a .text {
+    margin-bottom: 0;
+}
+
+.appointment-style-one .appointment-form input,
+.appointment-style-one .appointment-form textarea {
+    font-size: 16px !important;
+}
+
+.appointment-style-one.home-two .bootstrap-select .dropdown-menu>li>a:hover .text {
+    color: #fff;
+}
+
+.wpex_02_appointment-form-section .appointment-form input {
+    background: transparent;
+}
+
+.wpex_02_appointment-form-section .bootstrap-select .dropdown-menu>li.selected>a .text {
+    color: #fff !important;
+}
+
+.wpex_02_appointment-form-section .bootstrap-select .dropdown-menu>li>a:hover .text {
+    color: #fff;
+}
+
+.team-style-one.ex {
+    background-color: #f1f7fa;
+}
+
+.team-style-one.ex .single-team-style-one .text-box {
+    padding: 30px 20px 30px 20px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.team-style-one.ex .single-team-style-one h3 {
+    margin-top: 0;
+}
+
+.team-style-one.ex .single-team-style-one:hover {
+    box-shadow: 0px 1px 50px 0px rgba(209, 209, 209, .75);
+    transition: .3s ease;
+}
+
+.team-style-one.ex .single-team-style-one {
+    transition: .3s ease;
+}
+
+.service-style-one.ex {
+    background-color: #f1f7fa;
+}
+
+.service-style-one.ex .single-service-style-one .text-box {
+    padding: 30px 20px 30px 20px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.service-style-one.ex .single-service-style-one .img-box {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.service-style-one.ex .single-service-style-one {
+    margin-bottom: 30px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    transition: .5s ease;
+}
+
+.service-style-one.ex .single-service-style-one:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.12);
+    transition: .5s ease;
+}
+
+.service-style-one.ex .single-service-style-one .img-box:before {
+    left: 0;
+    right: 0;
+    width: 0;
+}
+
+.service-style-one.ex .single-service-style-one:hover .img-box:before {
+    opacity: .85;
+    width: 100%;
+}
+
+.service-style-two.ex {
+    background-color: #f1f7fa;
+}
+
+.service-style-two.ex .single-service-style-two .text-box {
+    margin-top: 0px;
+    padding: 30px 20px 30px 20px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.service-style-two.ex .single-service-style-two:hover {
+    box-shadow: 0px 1px 50px 0px rgba(209, 209, 209, .75);
+    transition: .3s ease;
+}
+
+.service-style-two.ex .single-service-style-two {
+    transition: .3s ease;
+}
+
+.service-style-two.ex .single-service-style-two:hover .img-box:before {
+    opacity: .45;
+    width: 100%;
+}
+
+.service-style-two.ex .single-service-style-two .img-box:before {
+    width: 0;
+}
+
+.appointment-style-two.ex .appointment-form .bootstrap-select>.dropdown-toggle {
+    height: 54px;
+}
+
+.appointment-style-two.ex .appointment-form input {
+    background: transparent;
+}
+
+.appointment-style-two.ex .bootstrap-select .dropdown-menu>li.selected>a .text {
+    color: #fff !important;
+}
+
+.appointment-style-two.ex .bootstrap-select .dropdown-menu>li>a:hover .text {
+    color: #fff;
+}
+
+.wpex_02_team-section .team-block .content {
+    border: 1px solid #eaeaea;
+    padding: 25px 30px 20px 30px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 15px 40px 0px rgba(13, 29, 13, 0.1);
+}
+
+.wpex_02_blog-section .post-meta li:last-child {
+    display: none !important;
+}
+
+.wpex_02_blog-section ul.post-categories {
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.find-doctor-box .bootstrap-select .dropdown-menu>li.selected>a .text {
+    color: #fff !important;
+}
+
+.find-doctor-box .bootstrap-select .dropdown-menu>li>a .text {
+    margin-bottom: 0;
+}
+
+.find-doctor-box .bootstrap-select .dropdown-menu>li>a:hover .text {
+    color: #fff;
+}
+
+.km.blog-style-two.sec-pad.blog-page.three .sidebar .single-sidebar .appointment-form .bootstrap-select.btn-group .dropdown-toggle .caret {
+    right: 11px;
+}
+
+.km.blog-style-two.sec-pad.blog-page.three .sidebar .single-sidebar .appointment-form input,
+.sidebar .single-sidebar .appointment-form textarea {
+    font-size: 16px;
+}
+
+.bootstrap-select .dropdown-menu>li.selected>a .text {
+    color: #fff !important;
+}
+
+.bootstrap-select .dropdown-menu>li>a .text {
+    margin-bottom: 0;
+}
+
+.bootstrap-select .dropdown-menu>li>a:hover .text {
+    color: #fff;
+}
+
+.read-more-btn {
+    display: inline-block;
+}
+
+.km.blog-style-two .sidebar .single-sidebar .title {
+    margin-top: 0;
+}
+
+.feature-style-six .thm-container .row [class*=col-]:nth-child(odd):hover {
+    background: #000;
+    transition: all 700ms ease;
+}
+
+.btn-group.open .dropdown-toggle {
+    background-color: transparent !important;
+}
+
+.feature-style-six .thm-container .row [class*=col-]:nth-child(even):hover {
+    background: #000;
+    transition: all 700ms ease;
+}
+
+.feature-style-six .thm-container .row [class*=col-]:nth-child(odd) {
+    transition: all 700ms ease;
+}
+
+.feature-style-six .thm-container .row [class*=col-]:nth-child(even) {
+    transition: all 700ms ease;
+}
+
+.service-style-four .title-wrapper:before {
+    height: calc(100% + 275px);
+}
